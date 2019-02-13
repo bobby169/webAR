@@ -1,0 +1,68 @@
+body{
+    background: #000;
+}
+
+.hb-sound{
+    top:20px;
+}
+
+#marker-btn{
+    position: absolute;
+    bottom: 10px;
+    z-index: 999;
+    color: #fff;
+    top: auto;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+#marker-mask{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+}
+
+#marker{
+    width: 300px;
+    height: 300px;
+    border:3px solid #ffbe00;
+    position: absolute;
+}
+
+.target {
+    display: block;
+    width: 320px;
+    height: 36px;
+    color: #fff0c5;
+    text-align: center;
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 999;
+    padding-top: 120px;
+    text-shadow: 0 0 4px #cd9900;
+}
+
+.target:before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 110px;
+    background: url(../target.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -55px;
+}
+
+.target b {
+    padding: 0 3px;
+    font-weight: bold;
+}

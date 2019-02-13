@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>hackathon webAR</title>
+    <script src="js/libs/zepto-hb.min.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script>
+        var isAndroid = hb.Device.android;
+        var isIOS = hb.Device.iOS;
+        if(isAndroid){
+            location.href = '../ar/index.html';
+        }else{
+            location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
